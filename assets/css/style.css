@@ -143,8 +143,12 @@ hr {
     margin-bottom: 3%;
 }
 
-.active-tab,
-.active {
+.active-tab {
+    color: var(--blue-color);
+    font-weight: bold;
+}
+
+.active i {
     color: var(--blue-color);
     font-weight: bold;
 }
