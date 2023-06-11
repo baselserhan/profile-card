@@ -1,0 +1,203 @@
+:root {
+    --blue-color: #1E2D66;
+    --white-color: #fff;
+    --whitesmoke-color: #ededff;
+}
+
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Container Style */
+.container {
+    width: 100%;
+    height: auto;
+    background: var(--whitesmoke-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Profile Style */
+.profile {
+    position: relative;
+    width: 500px;
+    background-color: var(--white-color);
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px 10px rgb(89 56 49 / 16%);
+    overflow: hidden;
+    z-index: 22;
+    transition: all 0.3s;
+    border: 0px solid rgba(255, 255, 255, 0.3);
+    margin: 5% auto;
+}
+
+/* Card Header Style */
+.card-header {
+    width: 100%;
+    position: relative;
+}
+
+.card-header-bg {
+    width: calc(100% + 120px);
+    height: 450px;
+    border-radius: 50%;
+    margin-left: 50%;
+    margin-top: -50%;
+    transform: translateX(-50%);
+    z-index: 22;
+    background-image: url(../imgs/cover-1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.card-header-img {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+    transform: translateY(-50px);
+    padding: 0;
+    visibility: visible;
+    border: 7px solid rgb(255 255 255);
+    display: block;
+    transition: all 0.5s;
+}
+
+/* User Info Style */
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-name {
+    margin-top: -50px;
+    color: var(--blue-color);
+}
+
+.job-title,
+.address {
+    font-size: 0.9rem;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+/* Social Media Style */
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.social-media>div>h3 {
+    text-align: center;
+    color: var(--blue-color);
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin-top: 5%;
+}
+
+.btn>button {
+    cursor: pointer;
+    padding: 5px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background: var(--blue-color);
+    color: var(--white-color);
+}
+
+/* Feed Style */
+.tab {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 10%;
+}
+
+.tab>a {
+    text-decoration: none;
+    font-size: 0.87rem;
+}
+
+hr {
+    margin-top: -20px;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 3%;
+}
+
+.active-tab,
+.active {
+    color: var(--blue-color);
+    font-weight: bold;
+}
+
+/* Photos Style */
+.photos-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 0 2%;
+}
+
+.photos {
+    display: flex;
+    column-gap: 10px;
+}
+
+.photos>img {
+    width: 32%;
+    border-radius: 10px;
+}
+
+/* Lower Navbar Style */
+.card-social {
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+    background-color: #fff;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 8px 20px 10px rgb(89 56 49 / 16%);
+    margin-top: 5%;
+}
+
+.card-social__item {
+    width: 45px;
+    height: 40px;
+    margin: auto 6px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-social__icon {
+    top: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    display: inline-block;
+    left: 50%;
+    color: #b5b4b4;
+    transition: all ease-in-out 0.3s;
+}
+
+.icon {
+    color: #b5b4b4;
+}
